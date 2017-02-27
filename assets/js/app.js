@@ -25,10 +25,18 @@ $(function () {
 		}
 
 	}); 
-  console.log(imgs);
 	
 	var percentsTotal = 1;
 
+  function setPercents(total, current) {
+    var percent = Math.ceil(current / total * 100);
+
+    if (percent >= 100) {
+      $('.preloader').fadeOut();
+    }
+
+    $('.preloader__percents').text(percent + '%');
+  }
 	for (var i = 0; i < imgs.length; i++) {
 		var image = $('<img>', {
 			attr: {
@@ -49,15 +57,6 @@ $(function () {
 		});
 	}
 
-	function setPercents(total, current) {
-		var percent = Math.ceil(current / total * 100);
-
-		if (percent >= 100) {
-			$('.preloader').fadeOut();
-		}
-
-		$('.preloader__percents').text(percent + '%');
-	}
   // $('.preloader').fadeOut();
 });
 
