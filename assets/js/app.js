@@ -13,7 +13,7 @@ $(function () {
 		if (background != 'none') {
 			var path = background.replace('url("', '').replace('")', '');
 			imgs.push(path);
-      console.log(path);
+     // console.log(path);
 		}
 
 		if (img) {
@@ -93,7 +93,7 @@ var blogMenu = (function() {
   return {
     set: function(){  
       $(window).scroll(function() { 
-        console.log($(window).scrollTop())
+        //console.log($(window).scrollTop())
 
         if ($(window).scrollTop() + activeHeight > stickySidebar) {
             $('.blog__list').addClass('blog__list-fix');
