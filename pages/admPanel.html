@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="https://androshchukserhii.github.io/admPanel/css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="https://androshchukserhii.github.io/admPanel/css/style.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="blue darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">MadMin</a>
+                    <a href="#" data-activates="slide-out" class="button-collapse show-on-large right"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active"><a href="#!">Dashboard</a></li>
+                        <li><a href="#!">Posts</a></li>
+                        <li><a href="#!">Categories</a></li>
+                        <li><a href="#!">Comments</a></li>
+                        <li><a href="#!">Users</a></li>
+                    </ul>
+                    <ul id="slide-out" class="side-nav">
+                        <li>
+                            <div class="user-view">
+                                <div class="background"><img src="https://androshchukserhii.github.io/admPanel/img/ocean.jpg" alt=""></div>
+                                <a href="#!user">
+                                    <img src="https://androshchukserhii.github.io/admPanel/img/person3.jpg" alt="" class="circle">
+                                </a>
+                                <a href="#!name"><span class="white-text name">Ellen Williams</span></a>
+                                <a href="#!mail"><span class="white-text mail">jdandturk@gmail.com</span></a>
+                            </div>
+                        </li>
+                        <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                        <li><a href="#!">Posts</a></li>
+                        <li><a href="#!">Categories</a></li>
+                        <li><a href="#!">Comments</a></li>
+                        <li><a href="#!">Users</a></li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li><a class="subheader">Account Controls</a></li>
+                        <li><a href="#!" class="waves-effect">Logout</a></li>   
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="section">
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="card blue lighten-1 white-text center">
+                        <div class="card-content">
+                            <i class="material-icons medium">insert_emoticon</i>
+                            <h5>Monthly Visitors</h5>
+                            <h3 class="count">28300</h3>
+                            <div class="progress grey lighten-1">
+                                <div class="determinate white" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card white lighten-1 black-text center">
+                        <div class="card-content">
+                            <i class="material-icons medium">mode_edit</i>
+                            <h5>Blog Posts</h5>
+                            <h3 class="count">105</h3>
+                            <div class="progress grey lighten-1">
+                                <div class="determinate blue" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col s12 m3">
+                    <div class="card blue lighten-1 white-text center">
+                        <div class="card-content">
+                            <i class="material-icons medium">mode_comment</i>
+                            <h5>Comments</h5>
+                            <h3 class="count">1200</h3>
+                            <div class="progress grey lighten-1">
+                                <div class="determinate white" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card white lighten-1 black-text center">
+                        <div class="card-content">
+                            <i class="material-icons medium">supervisor_account</i>
+                            <h5>Users</h5>
+                            <h3 class="count">350</h3>
+                            <div class="progress grey lighten-1">
+                                <div class="determinate blue" style="width: 10%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section blue lighten-4">
+            <div class="row">
+                <div class="col s12 m6 l8">
+                    <div class="card-panel">
+                        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                    </div> 
+                </div>
+                <div class="col s12 m6 l4">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Latest Comments</h5>
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="https://androshchukserhii.github.io/admPanel/img/person1.jpg" alt="" class="circle">
+                            <span class="title">John Doe</span>
+                            <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima dolor error laboriosam autem ad beatae
+                                    explicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore. </p>
+                            <a href="#!" class="approve green-text" onclick="">Approve</a>  |
+                            <a href="#!" class="deny red-text" onclick="">Deny</a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="https://androshchukserhii.github.io/admPanel/img/person2.jpg" alt="" class="circle">
+                            <span class="title">Steve Smith</span>
+                            <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima dolor error laboriosam autem ad beatae
+                                    explicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore. </p>
+                            <a href="#!" class="approve green-text" onclick="">Approve</a>  |
+                            <a href="#!" class="deny red-text" onclick="">Deny</a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="https://androshchukserhii.github.io/admPanel/img/person3.jpg" alt="" class="circle">
+                            <span class="title">Ellen Williams</span>
+                            <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima dolor error laboriosam autem ad beatae
+                                    explicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore. </p>
+                            <a href="#!" class="approve green-text" onclick="">Approve</a>  |
+                            <a href="#!" class="deny red-text" onclick="">Deny</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Recent Posts & Quick Todos-->
+        <section class="section">
+            <div class="row">
+                <div class="col s12 m6 l8">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Recent Posts</span>
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Category</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Post One</td>
+                                        <td>Web Development</td>
+                                        <td><a href="#!" class="waves-effect waves-light btn blue lighten-2">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post Two</td>
+                                        <td>Graphic Design</td>
+                                        <td><a href="#!" class="waves-effect waves-light btn blue lighten-2">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post Three</td>
+                                        <td>Web Development</td>
+                                        <td><a href="#!" class="waves-effect waves-light btn blue lighten-2">Details</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s1 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">Quick Todos</div>
+                            <form class="todo-forms">
+                                <div class="input-field">
+                                    <input id="todo" type="text" placeholder="Add Todo..">
+                                </div>
+                            </form>
+                            <ul class="collection todo-list">
+                                <li class="collection-item"><div>First Todo<a href="#!" class="secondary-content delete"><i class="material-icons">close</i> </a></div></li>
+                                <li class="collection-item"><div>Todo Two<a href="#!" class="secondary-content delete"><i class="material-icons">close</i> </a></div></li>
+                                <li class="collection-item"><div>Todo Three<a href="#!" class="secondary-content delete"><i class="material-icons">close</i> </a></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section blue darken-2 white-text center">
+            <p>Madmin Panel © 2014 Copyright Text</p> 
+        </footer>
+        <!-- fixed button -->
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large pulse red">
+                <i class="large material-icons">add</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating blue"><i class="material-icons">mode_edit</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">folder</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">supervisor_account</i></a></li>
+            </ul>
+        </div>
+        <!-- PRELOADER -->
+        <div class="preload preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="https://androshchukserhii.github.io/admPanel/js/materialize.min.js"></script>
+        <script src="https://androshchukserhii.github.io/admPanel/js/main.js"></script>
+    </body>
+</html>
