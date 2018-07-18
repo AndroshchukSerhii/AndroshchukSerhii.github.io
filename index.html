@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html leng="ru">
   <head>
     <meta charset="utf-8">
     <title>Home page</title>
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://androshchukserhii.github.io/assets/css/foundation.css">
     <link rel="stylesheet" href="https://androshchukserhii.github.io/assets/css/app.css">
     <script src="https://androshchukserhii.github.io/assets/js/foundation.js" defer></script><!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
     <div class="page__wrap page__wrap_welcome">
-      <div id="parallax"><img class="parallax-layer parallax-layer_7" src="https://androshchukserhii.github.io/assets/img/Layer7.jpg" alt=""><img class="parallax-layer parallax-layer_6" src="https://androshchukserhii.github.io/assets/img/Layer6.png" alt=""><img class="parallax-layer parallax-layer_5" src="https://androshchukserhii.github.io/assets/img/Layer5.png" alt=""><img class="parallax-layer parallax-layer_4" src="https://androshchukserhii.github.io/assets/img/Layer4.png" alt=""><img class="parallax-layer parallax-layer_3" src="https://androshchukserhii.github.io/assets/img/Layer3.png" alt=""><img class="parallax-layer parallax-layer_2" src="https://androshchukserhii.github.io/assets/img/Layer2.png" alt=""><img class="parallax-layer parallax-layer_1" src="https://androshchukserhii.github.io/assets/img/Layer1.png" alt="">
+      <div id="parallax"><img class="parallax-layer parallax-layer_7" data-src="https://androshchukserhii.github.io/assets/img/Layer7.jpg" alt=""><img class="parallax-layer parallax-layer_6" data-src="https://androshchukserhii.github.io/assets/img/Layer6.png" alt=""><img class="parallax-layer parallax-layer_5" data-src="https://androshchukserhii.github.io/assets/img/Layer5.png" alt=""><img class="parallax-layer parallax-layer_4" data-src="https://androshchukserhii.github.io/assets/img/Layer4.png" alt=""><img class="parallax-layer parallax-layer_3" data-src="https://androshchukserhii.github.io/assets/img/Layer3.png" alt=""><img class="parallax-layer parallax-layer_2" data-src="https://androshchukserhii.github.io/assets/img/Layer2.png" alt=""><img class="parallax-layer parallax-layer_1" data-src="https://androshchukserhii.github.io/assets/img/Layer1.png" alt="">
         <div class="button__wrap"><a class="button__log flip" href="#">Авторизоваться</a></div>
         <div class="cont-contactBtn">
           <div class="cont-flip">
@@ -30,15 +30,15 @@
                 <ul class="icon__wrap-link">
                   <li class="icon__wrap icon__wrap-green"><a href="https://vk.com/grey_ss" target="_blank">
                       <svg class="icon icon-vk">
-                        <use xlink:href="/assets/img/sprite.svg#vk"></use>
+                        <use xlink:href="https://androshchukserhii.github.io/assets/img/sprite.svg#vk"></use>
                       </svg></a></li>
                   <li class="icon__wrap icon__wrap-green"><a href="https://github.com/AndroshchukSerhii" target="_blank">
                       <svg class="icon icon-github">
-                        <use xlink:href="/assets/img/sprite.svg#github"></use>
+                        <use xlink:href="https://androshchukserhii.github.io/assets/img/sprite.svg#github"></use>
                       </svg></a></li>
                   <li class="icon__wrap icon__wrap-green"><a href="https://ua.linkedin.com/in/сергей-андрощук-1b03b8125" target="_blank">
                       <svg class="icon icon-in">
-                        <use xlink:href="/assets/img/sprite.svg#in"></use>
+                        <use xlink:href="https://androshchukserhii.github.io/assets/img/sprite.svg#in"></use>
                       </svg></a></li>
                 </ul>
               </div>
@@ -54,17 +54,23 @@
               </div>
               <form class="form__wraper">
                 <div class="form__field"><span class="form__icon"></span>
-                  <input type="text" placeholder="Логин">
+                  <input type="text" placeholder=" Логин">
                 </div>
                 <div class="form__field"><span class="form__icon"></span>
-                  <input type="text" placeholder="Пароль">
+                  <input type="text" placeholder=" Пароль">
                 </div>
                 <div class="form__wraper-check">
-                  <input type="checkbox">Я человек
-                  <p>Вы точно не робот?</p>
-                  <div class="form__radio">
-                    <input type="radio" name="radio" value="yes">Да
-                    <input type="radio" name="radio" value="no" checked>Не уверен
+                  <label class="form__isHuman">
+                    <input type="checkbox">Я человек<span class="checkmark"> </span>
+                  </label>
+                  <p>Вы точно не робот?	 </p>
+                  <div class="form__radio form__isHuman">
+                    <label class="form__isHuman">
+                      <input type="radio" name="radio" value="yes"><span>Да</span><span class="checkradio"></span>
+                    </label>
+                    <label class="form__isHuman"> 
+                      <input type="radio" name="radio" value="no" checked><span>Не уверен	</span><span class="checkradio"></span>
+                    </label>
                   </div>
                 </div>
               </form>
@@ -83,7 +89,7 @@
 <div class="preloader__percents">0%</div>
 </div>
 </div> 
-    <script src="https://api-maps.yandex.ru/2.1/?load=Map,Placemark,geoObject.addon.balloon&amp;lang=ru_RU" type="text/javascript"></script>
-    <script src="/assets/js/app.js" defer></script>
+    <script src="http://api-maps.yandex.ru/2.1/?load=Map,Placemark,geoObject.addon.balloon&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="https://androshchukserhii.github.io/assets/js/app.js" defer></script>
   </body>
 </html>
