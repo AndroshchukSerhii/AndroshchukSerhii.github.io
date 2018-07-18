@@ -83,7 +83,7 @@ $(document).ready(function(){
     dots: false,
     // autoWidthClass: 'thems__auto',
     autoplay: false,
-    navText: ["<img src=\"assets/img/arrow2.png\"</img>","<img src=\"assets/img/arrow2.png\"</img>"],
+        navText: ["<img src=\"https://androshchukserhii.github.io/barista/img/arrow2.png\"</img>","<img src=\"https://androshchukserhii.github.io/barista/img/arrow2.png\"</img>"],
     autoplayHoverPause: true,
     responsive:{
         0:{
